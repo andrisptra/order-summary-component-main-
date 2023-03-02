@@ -100,7 +100,7 @@ body {
 .order-item-button-proceed:hover,
 .price-change:hover,
 .order-item-button-cancel:hover ,
-input:hover {
+ {
     opacity: 0.7;
     cursor: pointer;
 }
