@@ -104,6 +104,9 @@ body {
     opacity: 0.7;
     cursor: pointer;
 }
+input:hover {
+    cursor: pointer;
+}
 
 .order-item-button-cancel input {
     background-color: rgba(3, 19, 59, 0);
