@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    /* border: 1px solid red; */
+}
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    width: 100vw;
+    color: hsl(223, 47%, 23%);
+}
+.container {
+    margin: 50px auto;
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+    -webkit-box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+    -moz-box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+.order-item > div {
+    padding: 20px 20px;
+}
+.order-hero h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+.order-desc p {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.order-price {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.price-desc h2 {
+    font-size: 15px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.price-desc p {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-change .icon-music,
+.price-desc {
+    flex: 3;
+}
+
+.price-change {
+    flex: 3;
+    text-align: end;
+}
+
+.price-change a {
+    font-weight: 700;
+    font-size: 12px;
+    color: hsl(245, 75%, 52%);
+    border-bottom: 2px solid hsl(245, 75%, 52%);
+}
+
+.order-item-button-proceed {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+    -webkit-box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+    -moz-box-shadow: -1px 4px 38px -6px rgba(22, 28, 161, 0.34);
+}
+.order-item-button-proceed input {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: hsl(225, 100%, 98%);
+}
+.order-item-button-proceed:hover,
+.price-change:hover,
+.order-item-button-cancel:hover {
+    opacity: 0.7;
+}
+
+.order-item-button-cancel input {
+    background-color: rgba(3, 19, 59, 0);
+    border: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .container {
+        width: 400px;
+    }
+    .image img {
+        width: 100%;
+    }
+}
